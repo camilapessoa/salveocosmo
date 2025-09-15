@@ -13,8 +13,16 @@
         }
         
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
+          /* Gradiente semi-transparente sobre a imagem */
+    background: 
+        linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%),
+        url('cosmo2.png');
+    
+    background-size: cover;         /* Preenche todo o espaço */
+    background-repeat: no-repeat;   /* Evita repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+}
+       
         
         .card-shadow {
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -71,6 +79,7 @@
                     🐱
                 </div>
             </div>
+            
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Rifa do Cosmo</h1>
             <p class="text-xl md:text-2xl font-light">Ajude um gatinho especial a vencer a PIF</p>
         </div>
@@ -149,6 +158,7 @@
                         <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                             1️⃣
                         </div>
+                        
                         <h3 class="text-xl font-semibold mb-2">Escolha seus números</h3>
                         <p class="text-gray-600">Selecione quantos números quiser de 001 a 100</p>
                     </div>
@@ -168,6 +178,39 @@
                     </div>
                 </div>
             </div>
+
+
+             <div class="bg-white rounded-2xl card-shadow p-8 mt-12">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Avisos sobre o sorteio</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                     
+                        
+                        <h3 class="text-xl font-semibold mb-2">Onde encontro o resultado?</h3>
+                        <p class="text-gray-600">O resultado do sorteio sairá pela loteria federal, no dia 15/10, considerando os dois últimos dígitos dos bilhetes premiados. <br>
+                            O ganhador do Aspirador de pó será o número de rifa que corresponde aos 2 últimos dígitos do bilhete sorteado para o 1° prêmio do sorteio da loteria federal. <br> 
+                            O ganhador do kit de copos de cerveja artesanal será o número de rifa correspondente aos 2 últimos dígitos do bilhete sorteado para o 2° prêmio do mesmo sorteio citado.</p>
+                    </div>
+                    <div class="text-center">
+                        
+                        <h3 class="text-xl font-semibold mb-2">Exemplo de número sorteado</h3>
+                        <p class="text-gray-600">
+1° prêmio: bilhete sorteado n° 12345 = O ganhador do Aspirador será o número de rifa 45. <br>
+2° prêmio: bilhete sorteado n° 54321= o ganhador do jogo de copos será o número de rifa 21. 
+
+ </p>
+                    </div>
+                    <div class="text-center">
+                       
+                        <h3 class="text-xl font-semibold mb-2">Divulgação dos resultados</h3>
+                        <p class="text-gray-600">
+ Divulgaremos o resultado da rifa no Instagram  @salveocosmodapif  as 19:30 e  tambem poderá ser conferido na data prevista a partir das 19h na página oficial da loteria federal</p>
+                    </div>
+                </div>
+            </div>
+
+
+
         </section>
 
         <!-- Numbers Selection -->
@@ -200,14 +243,14 @@
         <section class="mb-16">
             <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl card-shadow p-8 text-white text-center">
                 <h2 class="text-3xl font-bold mb-6">Como Pagar e Ajudar o Cosmo 💝</h2>
-                <p class="text-xl mb-8">Escolha a forma de pagamento que preferir</p>
+                <p class="text-xl mb-8">A Rifa é via PIX mas você pode ajudar com qualquer valor doando no Kickante</p>
                 
                 <div class="grid md:grid-cols-2 gap-8 mb-8">
                     <!-- Kickante Option -->
                     <div class="bg-white bg-opacity-20 rounded-xl p-6 backdrop-blur-sm">
                         <div class="text-4xl mb-4">🌟</div>
                         <h3 class="text-xl font-bold mb-4">Vaquinha Online</h3>
-                        <p class="mb-6">Contribua diretamente na campanha do Kickante</p>
+                        <p class="mb-6">Contribua com qualquer valor na campanha do Kickante</p>
                         <a href="https://www.kickante.com.br/vaquinha-online/salve-o-cosmo-ele-tem-8-meses-e-precisa-da-sua-ajuda-para-vencer-a-pif" target="_blank" class="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-block">
                             💳 Doar no Kickante
                         </a>
@@ -216,7 +259,7 @@
                     <!-- PIX Option -->
                     <div class="bg-white bg-opacity-20 rounded-xl p-6 backdrop-blur-sm">
                         <div class="text-4xl mb-4">💳</div>
-                        <h3 class="text-xl font-bold mb-4">PIX Direto</h3>
+                        <h3 class="text-xl font-bold mb-4">PIX R$10,0 para a rifa</h3>
                         <p class="mb-4">Chave PIX:</p>
                         <div class="bg-white bg-opacity-30 rounded-lg p-3 mb-4">
                             <code class="text-lg font-mono">edevandor@hotmail.com</code>
